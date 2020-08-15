@@ -1,0 +1,44 @@
+[debug] [2020-08-14T10:09:07.125Z] ----------------------------------------------------------------------
+[debug] [2020-08-14T10:09:07.128Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-08-14T10:09:07.128Z] CLI Version:   8.7.0
+[debug] [2020-08-14T10:09:07.129Z] Platform:      win32
+[debug] [2020-08-14T10:09:07.129Z] Node Version:  v12.18.1
+[debug] [2020-08-14T10:09:07.130Z] Time:          Fri Aug 14 2020 15:39:07 GMT+0530 (India Standard Time)
+[debug] [2020-08-14T10:09:07.131Z] ----------------------------------------------------------------------
+[debug] [2020-08-14T10:09:07.131Z] 
+[debug] [2020-08-14T10:09:07.145Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-14T10:09:07.146Z] > authorizing via signed-in user
+[debug] [2020-08-14T10:09:07.147Z] [iam] checking project audio-70269 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-08-14T10:09:07.152Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/audio-70269:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-08-14T10:09:08.790Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 14 Aug 2020 10:09:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1137","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-14T10:09:08.793Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/audio-70269  
+ 
+[debug] [2020-08-14T10:09:09.484Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 14 Aug 2020 10:09:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'audio-70269'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-08-14T10:09:09.508Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/audio-70269/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-08-14T10:09:12.625Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 14 Aug 2020 10:09:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[audio-70269]: beginning deploy... 
+[debug] [2020-08-14T10:09:21.637Z] Error: EPERM: operation not permitted, scandir 'C:/Users/santh/AppData/Local/Application Data'
+    at Object.readdirSync (fs.js:948:3)
+    at GlobSync._readdir (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:41)
+    at GlobSync._readdirInGlobStar (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:383:10)
+    at GlobSync._process (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:383:10)
+    at GlobSync._process (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:48:10)
+    at Function.globSync [as sync] (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:26:10)
+    at listFiles (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at _runDeploys (C:\Users\santh\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:29:23)
+[error] 
+[error] Error: An unexpected error has occurred.
